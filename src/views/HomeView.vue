@@ -75,7 +75,7 @@ const section2 = () => {
           </div>
         </div>
         <Transition name="slide-fade" mode="out-in">
-          <div class="flex w-full" v-show="section === 1">
+          <div class="flex w-full" v-if="section === 1">
             <div class="w-full mt-32">
               <div class="flex flex-col">
                 <p class="bg-green-500 w-fit h-fit p-2 rounded-lg text-slate-50 text-sm font-mono">
@@ -170,7 +170,7 @@ const section2 = () => {
         </Transition>
 
         <Transition name="slide-fade" mode="out-in">
-          <div v-show="section === 2" class="flex flex-col w-full">
+          <div v-if="section === 2" class="flex flex-col w-full">
             <h2 class="font-mono text-4xl text-slate-50">
               My <span class="text-green-400">Specializations</span>
             </h2>
@@ -267,7 +267,41 @@ const section2 = () => {
         <div v-show="section === 4"></div>
 
         <div class="absolute w-96 rounded-full bg-slate-600 bottom-32 left-36">
-          <div class="h-1 rounded-full bg-green-500" style="width: 17.66%"></div>
+          <div
+            v-show="section === 1"
+            class="h-1 rounded-full bg-green-500"
+            style="width: 14.2857142857%"
+          ></div>
+          <div
+            v-show="section === 2"
+            class="h-1 rounded-full bg-green-500"
+            style="width: 28.5714285714%"
+          ></div>
+          <div
+            v-show="section === 3"
+            class="h-1 rounded-full bg-green-500"
+            style="width: 42.8571428571%"
+          ></div>
+          <div
+            v-show="section === 4"
+            class="h-1 rounded-full bg-green-500"
+            style="width: 57.1428571429%"
+          ></div>
+          <div
+            v-show="section === 5"
+            class="h-1 rounded-full bg-green-500"
+            style="width: 71.4285714286%"
+          ></div>
+          <div
+            v-show="section === 6"
+            class="h-1 rounded-full bg-green-500"
+            style="width: 85.7142857143%"
+          ></div>
+          <div
+            v-show="section === 7"
+            class="h-1 rounded-full bg-green-500"
+            style="width: 100%"
+          ></div>
         </div>
 
         <div class="absolute w-14 h-fit rounded-full top-32 -right-16 ring-2 ring-slate-800">
@@ -353,7 +387,7 @@ const section2 = () => {
 }
 
 .slide-fade-leave-to {
-  transform: translateX(100px);
+  transform: translateX(-100px);
   opacity: 0;
 }
 </style>
