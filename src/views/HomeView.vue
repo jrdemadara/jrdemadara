@@ -248,7 +248,49 @@ const section2 = () => {
           </div>
         </Transition>
 
-        <div class="absolute w-96 rounded-full bg-slate-600 bottom-32 left-36">
+        <Transition name="slide-fade" mode="out-in">
+          <div v-if="section === 6" class="flex flex-col w-full">
+            <div class="flex justify-center items-center rounded-full w-fit h-fit px-4 py-2 ring-1 ring-slate-50">
+              <DollarSign :size="16" :stroke-width="2" class="text-slate-50 mr-2" />
+              <p class="select-none font-mono text-sm text-slate-50">PRICES</p>
+            </div>
+            <h2 class="select-none font-mono mt-10 text-4xl text-slate-50">Price <span class="text-green-500">Range</span></h2>
+            <div class="flex flex-col w-96 h-fit mt-8 ring-1 ring-green-500 rounded-3xl p-5">
+              <div class="flex flex-row">
+                <h6 class="font-mono text-lg text-slate-50 w-full">WEB APP</h6>
+                <p class="font-mono text-slate-400 leading-tight text-sm">Price may depend on project complexity.</p>
+              </div>
+              <p class="font-mono text-slate-50 mt-10">Starts at</p>
+              <h4 class="font-mono text-3xl font-bold text-green-500">₱38,000</h4>
+              <div class="w-full h-0.5 bg-slate-600 rounded mt-3"></div>
+              <ul class="list-disc font-mono text-sm text-slate-50 px-3.5 mt-6">
+                <li>Dynamic Content</li>
+                <li class="mt-2">Admin Panel</li>
+                <li class="mt-2">5 Page Website</li>
+                <li class="mt-2">Custom Design</li>
+                <li class="mt-2">6 Months Support</li>
+              </ul>
+              <div class="mt-2 flex">
+                <input class="font-mono text-slate-50 mr-2" type="checkbox" name="manage" id="manage" value="Fully Managed" /><label class="font-mono text-sm text-slate-50" for="manage"
+                  >Fully Managed</label
+                >
+              </div>
+              <div class="mt-2 flex">
+                <input class="font-mono text-slate-50 mr-2" type="checkbox" name="manage" id="manage" value="Fully Managed" /><label class="font-mono text-sm text-slate-50" for="manage"
+                  >Host it for me.</label
+                >
+              </div>
+              <div class="mt-2 flex">
+                <input class="font-mono text-slate-50 mr-2" type="checkbox" name="manage" id="manage" value="Fully Managed" /><label class="font-mono text-sm text-slate-50" for="manage"
+                  >Extended Support <span class="text-xs text-green-400">(12 months)</span></label
+                >
+              </div>
+              <button class="w-full h-fit py-3 rounded-3xl bg-green-400 text-slate-40 font-mono mt-10 mb-3">PICK THIS PACKAGE</button>
+            </div>
+          </div>
+        </Transition>
+
+        <div class="absolute w-96 rounded-full bg-slate-600 bottom-12 left-36">
           <div v-show="section === 1" class="h-1 rounded-full bg-green-500" style="width: 14.2857142857%"></div>
           <div v-show="section === 2" class="h-1 rounded-full bg-green-500" style="width: 28.5714285714%"></div>
           <div v-show="section === 3" class="h-1 rounded-full bg-green-500" style="width: 42.8571428571%"></div>
