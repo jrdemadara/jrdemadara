@@ -258,19 +258,24 @@ const section2 = () => {
             <div class="flex flex-col w-96 h-fit mt-8 ring-1 ring-green-500 rounded-3xl p-5">
               <div class="flex flex-row">
                 <h6 class="font-mono text-lg text-slate-50 w-full">WEB APP</h6>
-                <p class="font-mono text-slate-400 leading-tight text-sm">Price may depend on project complexity.</p>
+                <p class="font-mono leading-tight text-sm py-2 w-full bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text text-transparent">Basic to Brilliant</p>
               </div>
-              <p class="font-mono text-slate-50 mt-10">Starts at</p>
-              <h4 class="font-mono text-3xl font-bold text-green-500">₱38,000</h4>
+              <p class="font-mono text-slate-50 mt-8">Starts at</p>
+              <div class="flex">
+                <h4 class="font-mono text-4xl font-bold mr-4 text-green-500">₱38,000</h4>
+                <p class="font-mono text-sm text-slate-400 py-0.5 leading-4 mr-2">Cost varies with scope & complexity.</p>
+              </div>
+
               <div class="w-full h-0.5 bg-slate-600 rounded mt-3"></div>
-              <ul class="list-disc font-mono text-sm text-slate-50 px-3.5 mt-6">
+              <ul class="list-image-checkmark font-mono text-sm text-slate-50 px-3.5 mt-6">
                 <li>Dynamic Content</li>
                 <li class="mt-2">Admin Panel</li>
                 <li class="mt-2">5 Page Website</li>
                 <li class="mt-2">Custom Design</li>
                 <li class="mt-2">6 Months Support</li>
               </ul>
-              <div class="mt-2 flex">
+              <span class="font-mono text-xs text-slate-400 mt-4">Optional Addons:</span>
+              <div class="mt-1 flex">
                 <input class="font-mono text-slate-50 mr-2" type="checkbox" name="manage" id="manage" value="Fully Managed" /><label class="font-mono text-sm text-slate-50" for="manage"
                   >Fully Managed</label
                 >
@@ -285,7 +290,7 @@ const section2 = () => {
                   >Extended Support <span class="text-xs text-green-400">(12 months)</span></label
                 >
               </div>
-              <button class="w-full h-fit py-3 rounded-3xl bg-green-400 text-slate-40 font-mono mt-10 mb-3">PICK THIS PACKAGE</button>
+              <button class="w-full h-fit py-3 rounded-3xl bg-green-400 text-slate-40 font-mono mt-10 mb-2">PICK THIS PACKAGE</button>
             </div>
           </div>
         </Transition>
