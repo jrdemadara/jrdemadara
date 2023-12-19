@@ -68,7 +68,7 @@ const section2 = () => {
                     <ChevronRight :size="24" class="group-hover/offer:text-green-500 text-slate-50" />
                   </div>
                   <div @click="section = 7" class="relative flex justify-center items-center">
-                    <div class="animate-ping absolute flex justify-center items-center w-28 h-10 px-8 py-4 mt-8 rounded-full ring-1 ring-green-500"></div>
+                    <div class="animate-ping absolute flex justify-center items-center w-32 h-14 px-8 py-4 mt-8 rounded-full ring-1 ring-green-500"></div>
                     <div class="flex justify-center items-center w-48 h-14 px-8 py-4 mt-8 rounded-full bg-green-500">
                       <h6 class="select-none font-mono text-lg text-slate-50 mr-2">Hire me!</h6>
                       <HeartHandshake :size="24" class="group-hover/offer:text-green-500 text-slate-50" />
@@ -94,8 +94,8 @@ const section2 = () => {
 
             <div class="relative flex w-full">
               <div class="absolute w-[50rem] h-[50rem] rounded-full bg-gradient-to-r from-slate-950/40 via-slate-950/30 to-transparent"></div>
-              <div class="absolute flex justify-center items-center bg-slate-900 w-20 h-20 rounded-full shadow-2xl top-72 right-56">
-                <img src="@/image/debian.svg" alt="" srcset="" class="animate-pulse w-7" />
+              <div class="absolute flex justify-center items-center bg-slate-900 w-20 h-20 rounded-full shadow-2xl top-72 right-52">
+                <img src="@/assets/image/debian.svg" alt="" srcset="" class="animate-pulse w-7" />
               </div>
               <div class="absolute flex justify-center items-center bg-slate-900 w-36 h-36 rounded-full shadow-2xl bottom-52 left-4">
                 <img src="@/assets/image/logo.svg" alt="" srcset="" class="animate-pulse w-14" />
@@ -258,8 +258,8 @@ const section2 = () => {
             <div class="flex">
               <div class="flex flex-col w-96 h-fit mt-8 mr-8 ring-1 ring-green-500 rounded-3xl p-5">
                 <div class="flex flex-row">
-                  <h6 class="font-mono text-lg text-slate-50 w-full">WEB APP</h6>
-                  <p class="font-mono leading-tight text-sm py-2 w-full bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text text-transparent">Basic to Brilliant</p>
+                  <h6 class="font-mono text-lg text-slate-50 w-52">WEB APP</h6>
+                  <p class="font-mono leading-tight text-sm text-right py-2 w-full bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text text-transparent">Basic to Brilliant</p>
                 </div>
                 <p class="font-mono text-slate-50 mt-8">Starts at</p>
                 <div class="flex">
@@ -272,8 +272,9 @@ const section2 = () => {
                   <li>Dynamic Content</li>
                   <li class="mt-2">Admin Panel</li>
                   <li class="mt-2">5 Page Website</li>
+                  <li class="mt-2">Standard Security Measures</li>
                   <li class="mt-2">Custom Design</li>
-                  <li class="mt-2">6 Months Support</li>
+                  <li class="mt-2">6 Months Support<span class="text-xs text-green-400">(Minor Updates, Bug Fix)</span></li>
                 </ul>
                 <span class="font-mono text-xs text-slate-400 mt-4">Optional Addons:</span>
                 <div class="mt-1 flex">
@@ -283,7 +284,7 @@ const section2 = () => {
                 </div>
                 <div class="mt-2 flex">
                   <input class="font-mono text-slate-50 mr-2" type="checkbox" name="manage" id="manage" value="Fully Managed" /><label class="font-mono text-sm text-slate-50" for="manage"
-                    >Host it for me.</label
+                    >Host it online</label
                   >
                 </div>
                 <div class="mt-2 flex">
@@ -291,36 +292,33 @@ const section2 = () => {
                     >Extended Support <span class="text-xs text-green-400">(12 months)</span></label
                   >
                 </div>
-                <button class="w-full h-fit py-3 rounded-3xl bg-green-400 text-slate-40 font-mono mt-10 mb-2">PICK THIS PACKAGE</button>
+                <button class="w-full h-fit py-3 rounded-3xl bg-green-400 text-slate-40 font-mono mt-10 mb-2">CONTACT US</button>
               </div>
               <div class="flex flex-col w-96 h-fit mt-8 mr-8 ring-1 ring-green-500 rounded-3xl p-5">
                 <div class="flex flex-row">
-                  <h6 class="font-mono text-lg text-slate-50 w-full">WEB APP</h6>
-                  <p class="font-mono leading-tight text-sm py-2 w-full bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text text-transparent">Basic to Brilliant</p>
+                  <h6 class="font-mono text-lg text-slate-50 w-52">DESKTOP APP</h6>
+                  <p class="font-mono leading-tight text-sm text-right py-2 w-full bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text text-transparent">Empower Your Business</p>
                 </div>
                 <p class="font-mono text-slate-50 mt-8">Starts at</p>
                 <div class="flex">
-                  <h4 class="font-mono text-4xl font-bold mr-4 text-green-500">₱38,000</h4>
+                  <h4 class="font-mono text-4xl font-bold mr-4 text-green-500">₱27,000</h4>
                   <p class="font-mono text-sm text-slate-400 py-0.5 leading-4 mr-2">Cost varies with scope & complexity.</p>
                 </div>
 
                 <div class="w-full h-0.5 bg-slate-600 rounded mt-3"></div>
                 <ul class="list-image-checkmark font-mono text-sm text-slate-50 px-3.5 mt-6">
-                  <li>Dynamic Content</li>
-                  <li class="mt-2">Admin Panel</li>
-                  <li class="mt-2">5 Page Website</li>
+                  <li>OS Compatible <span class="text-xs text-green-400">(Windows, Macintosh, Linux)</span></li>
+                  <li class="mt-2">Up to 5 essential functionalities</li>
+                  <li class="mt-2">Up to 3 users</li>
+                  <li class="mt-2">Standard Security Measures</li>
+                  <li class="mt-2">Modern UI <span class="text-xs text-green-400">(Material Look & Feel)</span></li>
                   <li class="mt-2">Custom Design</li>
-                  <li class="mt-2">6 Months Support</li>
+                  <li class="mt-2">6 Months Support<span class="text-xs text-green-400">(Minor Updates, Bug Fix)</span></li>
                 </ul>
                 <span class="font-mono text-xs text-slate-400 mt-4">Optional Addons:</span>
                 <div class="mt-1 flex">
                   <input class="font-mono text-slate-50 mr-2" type="checkbox" name="manage" id="manage" value="Fully Managed" /><label class="font-mono text-sm text-slate-50" for="manage"
-                    >Fully Managed</label
-                  >
-                </div>
-                <div class="mt-2 flex">
-                  <input class="font-mono text-slate-50 mr-2" type="checkbox" name="manage" id="manage" value="Fully Managed" /><label class="font-mono text-sm text-slate-50" for="manage"
-                    >Host it for me.</label
+                    >Online Database</label
                   >
                 </div>
                 <div class="mt-2 flex">
@@ -328,36 +326,37 @@ const section2 = () => {
                     >Extended Support <span class="text-xs text-green-400">(12 months)</span></label
                   >
                 </div>
-                <button class="w-full h-fit py-3 rounded-3xl bg-green-400 text-slate-40 font-mono mt-10 mb-2">PICK THIS PACKAGE</button>
+                <button class="w-full h-fit py-3 rounded-3xl bg-green-400 text-slate-40 font-mono mt-10 mb-2">CONTACT US</button>
               </div>
               <div class="flex flex-col w-96 h-fit mt-8 mr-8 ring-1 ring-green-500 rounded-3xl p-5">
                 <div class="flex flex-row">
-                  <h6 class="font-mono text-lg text-slate-50 w-full">WEB APP</h6>
-                  <p class="font-mono leading-tight text-sm py-2 w-full bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text text-transparent">Basic to Brilliant</p>
+                  <h6 class="font-mono text-lg text-slate-50 w-full">MOBILE APP</h6>
+                  <p class="font-mono leading-tight text-sm text-end py-2 w-full bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text text-transparent">Go Packet Size</p>
                 </div>
                 <p class="font-mono text-slate-50 mt-8">Starts at</p>
                 <div class="flex">
-                  <h4 class="font-mono text-4xl font-bold mr-4 text-green-500">₱38,000</h4>
+                  <h4 class="font-mono text-4xl font-bold mr-4 text-green-500">₱42,000</h4>
                   <p class="font-mono text-sm text-slate-400 py-0.5 leading-4 mr-2">Cost varies with scope & complexity.</p>
                 </div>
 
                 <div class="w-full h-0.5 bg-slate-600 rounded mt-3"></div>
                 <ul class="list-image-checkmark font-mono text-sm text-slate-50 px-3.5 mt-6">
-                  <li>Dynamic Content</li>
-                  <li class="mt-2">Admin Panel</li>
-                  <li class="mt-2">5 Page Website</li>
+                  <li>Backend API & Database Integrated</li>
+                  <li class="mt-2">Phone & Tablet Compatibility</li>
+                  <li class="mt-2">Up to 5 android users</li>
+                  <li class="mt-2">Small to Medium Size Business</li>
                   <li class="mt-2">Custom Design</li>
-                  <li class="mt-2">6 Months Support</li>
+                  <li class="mt-2">6 Months Support<span class="text-xs text-green-400">(Minor Updates, Bug Fix)</span></li>
                 </ul>
                 <span class="font-mono text-xs text-slate-400 mt-4">Optional Addons:</span>
                 <div class="mt-1 flex">
                   <input class="font-mono text-slate-50 mr-2" type="checkbox" name="manage" id="manage" value="Fully Managed" /><label class="font-mono text-sm text-slate-50" for="manage"
-                    >Fully Managed</label
+                    >Deploy on Google Playstore</label
                   >
                 </div>
                 <div class="mt-2 flex">
                   <input class="font-mono text-slate-50 mr-2" type="checkbox" name="manage" id="manage" value="Fully Managed" /><label class="font-mono text-sm text-slate-50" for="manage"
-                    >Host it for me.</label
+                    >Host the Database & API</label
                   >
                 </div>
                 <div class="mt-2 flex">
@@ -365,7 +364,27 @@ const section2 = () => {
                     >Extended Support <span class="text-xs text-green-400">(12 months)</span></label
                   >
                 </div>
-                <button class="w-full h-fit py-3 rounded-3xl bg-green-400 text-slate-40 font-mono mt-10 mb-2">PICK THIS PACKAGE</button>
+                <button class="w-full h-fit py-3 rounded-3xl bg-green-400 text-slate-40 font-mono mt-10 mb-2">CONTACT US</button>
+              </div>
+            </div>
+          </div>
+        </Transition>
+
+        <Transition name="slide-fade" mode="out-in">
+          <div v-if="section === 7" class="flex flex-col w-full">
+            <div class="flex justify-center items-center rounded-full w-fit h-fit px-4 py-2 ring-1 ring-slate-50">
+              <Phone :size="16" :stroke-width="2" class="text-slate-50 mr-2" />
+              <p class="select-none font-mono text-sm text-slate-50">CONTACT</p>
+            </div>
+            <h2 class="select-none font-mono mt-16 text-4xl text-slate-50">Let's Get Things <span class="text-green-500">Done</span></h2>
+            <div class="grid grid-cols-2 gap-4 mt-12">
+              <div class="flex flex-col">
+                <label for="fullname" class="text-mono text-slate-50">Fullname <span class="text-red-400">*</span></label>
+                <input type="text" name="fullname" id="fullname" class="text-mono bg-transparent border border-t-0 border-l-0 border-r-0 border-slate-300 mt-4" />
+              </div>
+              <div>
+                <input type="text" name="fullname" id="fullname" />
+                <input type="text" name="fullname" id="fullname" />
               </div>
             </div>
           </div>
