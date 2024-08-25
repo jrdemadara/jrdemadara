@@ -26,7 +26,7 @@ import { Monitor, Network, TabletSmartphone, LayoutTemplate } from 'lucide-vue-n
           <TabletSmartphone :size="24" class="group-hover/service:text-green-400 text-slate-50" />
         </div>
         <p class="select-none font-mono text-slate-400 leading-tight mt-3">Fuel business growth with my expertise in custom mobile app development.</p>
-        <h6 class="select-none font-mono underline w-fit text-slate-50 hover:text-green-400 cursor-default mt-6">3 PROJECTS</h6>
+        <h6 class="select-none font-mono underline w-fit text-slate-50 hover:text-green-400 cursor-default mt-6">4 PROJECTS</h6>
       </div>
 
       <div class="group/service hover:ring-green-400 flex flex-col justify-center h-fit p-6 rounded-lg ring-1 ring-slate-600">

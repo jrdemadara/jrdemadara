@@ -23,13 +23,15 @@ import { HeartHandshake, ChevronRight } from 'lucide-vue-next'
             </div>
           </router-link>
 
-          <div class="relative flex justify-center items-center">
-            <div class="animate-ping absolute flex justify-center items-center w-32 h-14 px-8 py-4 mt-8 rounded-full ring-1 ring-green-500"></div>
-            <div class="flex justify-center items-center w-48 h-14 px-8 py-4 mt-8 rounded-full bg-green-500">
-              <h6 class="select-none font-mono text-lg text-slate-50 mr-2">Hire me!</h6>
-              <HeartHandshake :size="24" class="group-hover/offer:text-green-500 text-slate-50" />
+          <router-link to="/contact">
+            <div class="relative flex justify-center items-center">
+              <div class="flex justify-center items-center w-48 h-14 px-8 py-4 mt-8 rounded-full bg-green-500 hover:bg-green-600 active:bg-green-500 z-10">
+                <h6 class="select-none font-mono text-lg text-slate-50 mr-2">Hire me!</h6>
+                <HeartHandshake :size="24" class="group-hover/offer:text-green-500 text-slate-50" />
+              </div>
+              <div class="animate-ping absolute flex justify-center items-center w-32 h-14 px-8 py-4 mt-8 rounded-full ring-1 ring-green-500"></div>
             </div>
-          </div>
+          </router-link>
         </div>
 
         <div class="flex flex-row w-fit h-fit mt-14">
