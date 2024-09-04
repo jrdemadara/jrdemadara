@@ -13,7 +13,7 @@ const route = useRoute()
         <h6 class="font-mono font-bold text-xl text-slate-50">Johnny <span class="font-normal">Roger</span></h6>
       </div>
       <div class="flex flex-grow justify-end items-center w-40">
-        <p class="font-mono text-lg text-slate-50">+639972430944 / hello@jrdemadara.dev</p>
+        <p class="font-mono text-lg text-slate-50">+639972430944 / jrdemadara@protonmail.com</p>
       </div>
     </div>
     <div class="relative flex flex-row w-full h-full mt-10">

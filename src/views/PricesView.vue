@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { DollarSign } from 'lucide-vue-next'
+import { Construction, DollarSign } from 'lucide-vue-next'
 </script>
 
 <template>
@@ -9,8 +9,10 @@ import { DollarSign } from 'lucide-vue-next'
       <p class="select-none font-mono text-sm text-slate-50">PRICES</p>
     </div>
     <h2 class="select-none font-mono mt-12 text-4xl text-slate-50">Price <span class="text-green-500">Range</span></h2>
-    <div class="flex">
-      <div class="flex flex-col w-80 h-fit mt-8 mr-8 ring-1 ring-green-500 rounded-3xl p-5">
+    <div class="flex flex-col w-full h-full justify-center items-center">
+      <Construction :size="58" :stroke-width="2" class="text-orange-400 mr-2" />
+      <h2 class="font-mono text-4xl text-orange-400">Under Construction</h2>
+      <!-- <div class="flex flex-col w-80 h-fit mt-8 mr-8 ring-1 ring-green-500 rounded-3xl p-5">
         <div class="flex flex-row">
           <h6 class="font-mono text-lg text-slate-50 w-52">WEB APP</h6>
           <p class="font-mono leading-tight text-sm text-right py-2 w-full bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text text-transparent">Basic to Brilliant</p>
@@ -119,7 +121,7 @@ import { DollarSign } from 'lucide-vue-next'
           >
         </div>
         <button class="w-full h-fit py-3 rounded-3xl bg-green-400 text-slate-40 font-mono mt-10 mb-2">CONTACT US</button>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

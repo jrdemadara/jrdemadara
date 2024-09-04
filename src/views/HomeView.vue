@@ -6,16 +6,16 @@ import { HeartHandshake, ChevronRight } from 'lucide-vue-next'
   <div class="flex w-full">
     <div class="w-full mt-16">
       <div class="flex flex-col">
-        <p class="select-none bg-gradient-to-tr from-slate-700 to-neutral-700 w-fit h-fit px-3 py-1 rounded-lg text-slate-50 text-sm font-mono">Fullstack Developer</p>
-        <h2 class="select-none font-mono text-6xl text-slate-50 mt-1">
+        <p class="select-none bg-gradient-to-tr from-slate-700 to-neutral-700 w-fit h-fit px-3 py-1 mt-8 rounded-lg text-slate-50 text-sm font-mono">Fullstack Developer</p>
+        <h2 class="select-none font-mono text-6xl text-slate-50 mt-3">
           Crafting Code<br />
           Shaping Vision
         </h2>
-        <p class="select-none font-mono text-lg text-slate-400 mt-6">
+        <p class="select-none font-mono text-lg text-slate-400 mt-8">
           Passionate Full-Stack Developer. <br />
           Embracing challenges, staying updated.
         </p>
-        <div class="flex mt-4">
+        <div class="flex mt-8">
           <router-link to="/services">
             <div class="group/offer flex justify-center items-center w-56 h-14 px-8 py-4 mt-8 mr-8 rounded-full ring-2 ring-green-500">
               <h6 class="select-none group-hover/offer:text-green-500 font-mono text-lg text-slate-50 mr-2">My Services</h6>
@@ -34,7 +34,7 @@ import { HeartHandshake, ChevronRight } from 'lucide-vue-next'
           </router-link>
         </div>
 
-        <div class="flex flex-row w-fit h-fit mt-14">
+        <div class="flex flex-row w-fit h-fit mt-28">
           <div class="flex justify-center items-center mr-8">
             <h4 class="select-none font-mono text-5xl font-bold text-slate-50 mr-1">5</h4>
             <p class="select-none font-mono text-slate-50 leading-tight">YEARS <br />EXPERIENCE</p>
@@ -59,7 +59,7 @@ import { HeartHandshake, ChevronRight } from 'lucide-vue-next'
         <img src="@/assets/image/logo.svg" alt="" srcset="" class="animate-pulse w-14" />
       </div>
       <div class="absolute flex justify-center w-full h-full pt-32">
-        <img src="@/assets/image/me.png" alt="image" />
+        <img src="@/assets/image/me.png" alt="image" class="brightness-90 contrast-100" />
       </div>
       <div class="absolute flex justify-center items-center bg-slate-900 w-24 h-24 rounded-full shadow-2xl top-32 left-24">
         <img src="@/assets/image/node.png" alt="" srcset="" class="animate-pulse w-8" />
