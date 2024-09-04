@@ -1,5 +1,22 @@
 <script setup>
 import { HeartHandshake, ChevronRight } from 'lucide-vue-next'
+import resumePath from '@/assets/files/resume.pdf'
+
+const downloadResume = () => {
+  // Create an anchor element and set the href to the imported path
+  const link = document.createElement('a')
+  link.href = resumePath
+
+  // Set the download attribute with a filename (optional)
+  link.download = 'jrdemadara_resume.pdf'
+
+  // Append the link to the body and trigger a click to download
+  document.body.appendChild(link)
+  link.click()
+
+  // Clean up by removing the link element from the DOM
+  document.body.removeChild(link)
+}
 </script>
 
 <template>
@@ -23,15 +40,13 @@ import { HeartHandshake, ChevronRight } from 'lucide-vue-next'
             </div>
           </router-link>
 
-          <router-link to="/contact">
-            <div class="relative flex justify-center items-center">
-              <div class="flex justify-center items-center w-48 h-14 px-8 py-4 mt-8 rounded-full bg-green-500 hover:bg-green-600 active:bg-green-500 z-10">
-                <h6 class="select-none font-mono text-lg text-slate-50 mr-2">Hire me!</h6>
-                <HeartHandshake :size="24" class="group-hover/offer:text-green-500 text-slate-50" />
-              </div>
-              <div class="animate-ping absolute flex justify-center items-center w-32 h-14 px-8 py-4 mt-8 rounded-full ring-1 ring-green-500"></div>
+          <div @click="downloadResume" class="relative flex justify-center items-center">
+            <div class="flex justify-center items-center w-72 h-14 px-8 py-4 mt-8 rounded-full bg-green-500 hover:bg-green-600 active:bg-green-500 z-10">
+              <h6 class="select-none font-mono text-lg text-slate-50 mr-2">Download Resume</h6>
+              <HeartHandshake :size="24" class="group-hover/offer:text-green-500 text-slate-50" />
             </div>
-          </router-link>
+            <div class="animate-ping absolute flex justify-center items-center w-32 h-14 px-8 py-4 mt-8 rounded-full ring-1 ring-green-500"></div>
+          </div>
         </div>
 
         <div class="flex flex-row w-fit h-fit mt-28">
